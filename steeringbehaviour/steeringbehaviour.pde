@@ -1,32 +1,26 @@
+//main program
 World world;
-boolean sameAgentProperties = true;
-boolean keyDown = false;
+Editor editor;
+int simWidth = 600, simHeight = 600;
 
 void setup()
 {
-  size(800, 800);
+  size(1400, 800);
   colorMode(HSB);
   background(0);
-
-  world = new World(sameAgentProperties);
+  editor = new Editor();
+  MakeWorld();
 }
 
 void draw()
 {
-  if (keyPressed)
-  {
-    if (!keyDown)
-    {
-      keyDown = true;
-      if (key == ' ')
-      {
-        world = new World(sameAgentProperties);
-      }
-    }
-  } else
-  {
-    keyDown = false;
-  }
   world.Update();
   world.Show();
+  editor.Update();
+  editor.Show();
+}
+
+void MakeWorld()
+{
+  world = new World();
 }

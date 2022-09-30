@@ -3,11 +3,21 @@ class Population
   World world;
   Agent[] agents;
   
-  Population(int size, World w ,float ms, float sd, float sa, float ra, float da,int index)
+  int size;
+  float moveSpeed, sensorDistance, sensorAngle, rotationAngle, depositAmount, id;
+  
+  Population(int s, World w ,float ms, float sd, float sa, float ra, float da,int index)
   {
+    size = s;
+    moveSpeed = ms;
+    sensorDistance = sd;
+    sensorAngle = sa;
+    rotationAngle = ra;
+    depositAmount = da;
+    id = index;
     world = w;
-    agents = new Agent[size];
-    for (int i = 0; i < size; i++)
+    agents = new Agent[s];
+    for (int i = 0; i < s; i++)
     {
       agents[i] = new Agent(world,ms,sd,sa,ra,da,index);
     }

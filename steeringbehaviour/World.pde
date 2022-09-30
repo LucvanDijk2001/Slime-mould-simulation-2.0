@@ -2,40 +2,36 @@ class World
 {
   float texture[][][];
 
-  int populationAmount = 3;
-  int totalAgents = 60000;
-  float decaySpeed = random(0.1, 0.9);
+  int populationAmount;
+  float decaySpeed = random(decaySpeedMinMax.x, decaySpeedMinMax.y);
   float populationColors[];
   Population populations[];
 
-  World(boolean sameProperties)
+  World()
   {
-    texture = new float[width][height][populationAmount];
-    populations = new Population[populationAmount];
+    populationAmount = totalPopulations;
+    texture          = new float[simWidth][simHeight][populationAmount];
+    populations      = new Population[populationAmount];
     populationColors = new float[populationAmount];
 
-    if (!sameProperties)
+    float moveSpeed      = random(moveSpeedMinMax.x,      moveSpeedMinMax.y     );
+    float sensorDistance = random(sensorDistanceMinMax.x, sensorDistanceMinMax.y);
+    float sensorAngle    = random(sensorAngleMinMax.x,    sensorAngleMinMax.y   );
+    float rotationAngle  = random(rotationAngleMinMax.x,  rotationAngleMinMax.y );
+    float depositAmount  = random(depositAmountMinMax.x,  depositAmountMinMax.y );
+
+    for (int i = 0; i < populations.length; i++)
     {
-      for (int i = 0; i < populations.length; i++)
+      populationColors[i] = random(255);
+      if (populationProperties == POPULATIONPROPERTIES.RANDOM)
       {
-        populationColors[i] = random(255);
-        populations[i] = new Population(totalAgents/populationAmount, this, random(5, 100), random(1, 30), random(5, 120), random(5, 60), random(0.05, 0.8), i);
+         moveSpeed      = random(moveSpeedMinMax.x,      moveSpeedMinMax.y     );
+         sensorDistance = random(sensorDistanceMinMax.x, sensorDistanceMinMax.y);
+         sensorAngle    = random(sensorAngleMinMax.x,    sensorAngleMinMax.y   );
+         rotationAngle  = random(rotationAngleMinMax.x,  rotationAngleMinMax.y );
+         depositAmount  = random(depositAmountMinMax.x,  depositAmountMinMax.y );
       }
-    } else
-    {
-      texture = new float[width][height][populationAmount];
-      populations = new Population[populationAmount];
-      populationColors = new float[populationAmount];
-      float moveSpeed = random(5, 100);
-      float sensorDistance = random(1, 30);
-      float sensorAngle = random(5, 120);
-      float rotationAngle = random(5, 60);
-      float depositAmount = random(0.05, 0.8);
-      for (int i = 0; i < populations.length; i++)
-      {
-        populationColors[i] = random(255);
-        populations[i] = new Population(totalAgents/populationAmount, this, moveSpeed, sensorDistance, sensorAngle, rotationAngle, depositAmount, i);
-      }
+      populations[i] = new Population(totalAgents/populationAmount, this, moveSpeed, sensorDistance, sensorAngle, rotationAngle, depositAmount, i);
     }
   }
 
@@ -53,10 +49,11 @@ class World
 
     DiffuseTexture();
 
-    for (int x = 0; x < width; x++)
+    for (int x = 0; x < simWidth; x++)
     {
-      for (int y = 0; y < height; y++)
+      for (int y = 0; y < simHeight; y++)
       {
+
         float pSum = 0;
         int winningcol = 0;
         float highestVal = 0;
@@ -70,7 +67,8 @@ class World
         }
 
         pSum /= populationAmount;
-        color c = color(populationColors[winningcol], 255, round(pSum));
+        color c = color(populationColors[winningcol], 255, round(pSum*(populationAmount*0.8)));
+
         set(x, y, c);
       }
     }
@@ -78,9 +76,9 @@ class World
 
   void DiffuseTexture()
   {
-    for (int x = 0; x < width; x++)
+    for (int x = 0; x < simWidth; x++)
     {
-      for (int y = 0; y < height; y++)
+      for (int y = 0; y < simHeight; y++)
       {
         for (int i = 0; i < populationAmount; i++)
         {
@@ -101,13 +99,13 @@ class World
           }
 
           //right
-          if (x < width-1) {
+          if (x < simWidth-1) {
             sum += texture[x+1][y][i];
             NBCount++;
           }
 
           //down
-          if (y < height-1) {
+          if (y < simHeight-1) {
             sum += texture[x][y+1][i];
             NBCount++;
           }
@@ -119,19 +117,19 @@ class World
           }
 
           //top right
-          if ( x < width-1 && y > 0) {
+          if ( x < simWidth-1 && y > 0) {
             sum += texture[x+1][y-1][i];
             NBCount++;
           }
 
           //bottom left
-          if (x > 0 && y < height-1) {
+          if (x > 0 && y < simHeight-1) {
             sum += texture[x-1][y+1][i];
             NBCount++;
           }
 
           //bottom right
-          if ( x < width-1 && y < height-1) {
+          if ( x < simWidth-1 && y < simHeight-1) {
             sum += texture[x+1][y+1][i];
             NBCount++;
           }
@@ -143,9 +141,9 @@ class World
       }
     }
 
-    for (int x = 0; x < width; x++)
+    for (int x = 0; x < simWidth; x++)
     {
-      for (int y = 0; y < height; y++)
+      for (int y = 0; y < simHeight; y++)
       {
         for (int i = 0; i < populationAmount; i++)
         {

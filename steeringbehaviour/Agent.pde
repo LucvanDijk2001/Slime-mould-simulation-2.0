@@ -3,9 +3,9 @@ class Agent
   World world;
   //agent position
   PVector rand = PVector.random2D();
-  PVector position = PVector.add(new PVector(width/2, height/2), PVector.mult(rand, random(350)));
+  PVector position;
   //agent direction
-  float direction = degrees(atan2(rand.x, rand.y)) - 180;
+  float direction;
   //agent move speed
   float moveSpeed = 20;
   //agent pheremone deposit amount
@@ -28,6 +28,23 @@ class Agent
 
   Agent(World w, float ms, float sd, float sa, float ra, float da, int ind)
   {
+    switch(spawnType)
+    {
+     case CIRCLEINWARDS:
+       position = PVector.add(new PVector(simWidth/2, simHeight/2), PVector.mult(rand, random((simWidth/2)-simWidth/15)));
+       direction = degrees(atan2(rand.x, rand.y)) - 180;
+     break;
+     
+     case CIRCLEOUTWARDS:
+       position = PVector.add(new PVector(simWidth/2, simHeight/2), PVector.mult(rand, random((simWidth/2)-simWidth/15)));
+       direction = degrees(atan2(rand.x, rand.y));
+     break;
+     
+     case RANDOMPOSITION:
+       position = new PVector(random(simWidth),random(simHeight));
+       direction = random(360);
+     break;
+    }
     moveSpeed = ms;
     sensorDistance = sd;
     sensorAngle = sa;
@@ -60,14 +77,14 @@ class Agent
 
   void ClampPosition()
   {
-    if (position.x < 0 || position.x > width-1)
+    if (position.x < 0 || position.x > simWidth-1)
     {
-      position.x = constrain(position.x, 0, width-1);
+      position.x = constrain(position.x, 0, simWidth-1);
       direction = 180 - (direction-180);
     }
-    if (position.y < 0 || position.y > height-1)
+    if (position.y < 0 || position.y > simHeight-1)
     {
-      position.y = constrain(position.y, 1, height-1);
+      position.y = constrain(position.y, 1, simHeight-1);
       direction = 360 - (direction-180);
     }
   }
@@ -90,7 +107,7 @@ class Agent
     }
     for (int i = 0; i < sensors.length; i++)
     {
-      if (sensors[i].x > 0 && sensors[i].x < width-1 && sensors[i].y > 0 && sensors[i].y < height-1)
+      if (sensors[i].x > 0 && sensors[i].x < simWidth-1 && sensors[i].y > 0 && sensors[i].y < simHeight-1)
       {
         for (int j = 0; j < world.populationAmount; j++)
         {
