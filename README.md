@@ -11,7 +11,7 @@ This version also supports multiple populations. Populations try to avoid pherem
 I once again want to credit this paper i used:
 https://cargocollective.com/sagejenson/physarum made by Sage Jenson.
 
-I also want to thank sebastian league for inspiring me to make something like this:
+I also want to thank Sebastian League for inspiring me to make something like this:
 https://www.youtube.com/c/SebastianLague
 
 (We don't look at the editor code... haha)
