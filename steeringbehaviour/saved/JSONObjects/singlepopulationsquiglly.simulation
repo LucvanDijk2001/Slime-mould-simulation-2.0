@@ -1,0 +1,31 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": 5,
+    "totalAgents": 67330,
+    "propertySync": 0,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 5,
+    "depositAmountMax": 0.800000011920929,
+    "sensorDistanceMin": 1,
+    "decaySpeed": 0.7954282760620117,
+    "decaySpeedMin": 0.4300000071525574,
+    "spawnType": 1,
+    "totalPopulations": 1,
+    "moveSpeedMax": 126.66665649414062,
+    "sensorAngleMax": 120,
+    "depositAmountMin": 0.20000000298023224,
+    "rotationAngleMin": 5,
+    "sensorDistanceMax": 30
+  },
+  {
+    "depositAmount": 0.20000000298023224,
+    "sensorAngle": 33.68663024902344,
+    "moveSpeed": 50.35867691040039,
+    "color": 121.61686706542969,
+    "rotationAngle": 23.174850463867188,
+    "name": "bodoribee",
+    "sensorDistance": 3.8574130535125732
+  }
+]

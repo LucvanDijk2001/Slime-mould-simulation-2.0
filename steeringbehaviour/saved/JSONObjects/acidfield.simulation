@@ -1,0 +1,40 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": 13.333343505859375,
+    "totalAgents": 26245,
+    "propertySync": 1,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -50,
+    "decaySpeed": 0.29124927520751953,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 2,
+    "totalPopulations": 2,
+    "moveSpeedMax": 55.55555725097656,
+    "sensorAngleMax": 270,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": -90,
+    "sensorDistanceMax": 50
+  },
+  {
+    "depositAmount": 0.6253027319908142,
+    "sensorAngle": 49.56540298461914,
+    "moveSpeed": 34.49946594238281,
+    "color": 92.6478271484375,
+    "rotationAngle": 59.43760681152344,
+    "name": "kopan",
+    "sensorDistance": 16.224594116210938
+  },
+  {
+    "depositAmount": 0.6253027319908142,
+    "sensorAngle": 49.56540298461914,
+    "moveSpeed": 34.49946594238281,
+    "color": 70.88636779785156,
+    "rotationAngle": 59.43760681152344,
+    "name": "muliba",
+    "sensorDistance": 16.224594116210938
+  }
+]

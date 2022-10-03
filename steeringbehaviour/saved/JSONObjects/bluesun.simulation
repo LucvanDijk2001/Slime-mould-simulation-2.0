@@ -1,0 +1,49 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": 5,
+    "totalAgents": 83170,
+    "propertySync": 1,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 5,
+    "depositAmountMax": 0.9000000357627869,
+    "sensorDistanceMin": -7.222221374511719,
+    "decaySpeed": 0.33627623319625854,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 1,
+    "totalPopulations": 3,
+    "moveSpeedMax": 73.33334350585938,
+    "sensorAngleMax": 135,
+    "depositAmountMin": 0.14000000059604645,
+    "rotationAngleMin": 5,
+    "sensorDistanceMax": 31.666664123535156
+  },
+  {
+    "depositAmount": 0.20784030854701996,
+    "sensorAngle": 48.69499588012695,
+    "moveSpeed": 12.349981307983398,
+    "color": 170.82009887695312,
+    "rotationAngle": 18.740291595458984,
+    "name": "dabatu",
+    "sensorDistance": 3.6105499267578125
+  },
+  {
+    "depositAmount": 0.20784030854701996,
+    "sensorAngle": 48.69499588012695,
+    "moveSpeed": 12.349981307983398,
+    "color": 0.06584286689758301,
+    "rotationAngle": 18.740291595458984,
+    "name": "denli",
+    "sensorDistance": 3.6105499267578125
+  },
+  {
+    "depositAmount": 0.20784030854701996,
+    "sensorAngle": 48.69499588012695,
+    "moveSpeed": 12.349981307983398,
+    "color": 131.9855499267578,
+    "rotationAngle": 18.740291595458984,
+    "name": "liko",
+    "sensorDistance": 3.6105499267578125
+  }
+]

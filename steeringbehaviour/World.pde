@@ -3,35 +3,64 @@ class World
   float texture[][][];
 
   int populationAmount;
-  float decaySpeed = random(decaySpeedMinMax.x, decaySpeedMinMax.y);
-  float populationColors[];
-  Population populations[];
+  int agents;
 
   World()
   {
+    decaySpeed = random(decaySpeedMinMax.x, decaySpeedMinMax.y);
+    cdmin = decaySpeedMinMax.x;
+    cdmax = decaySpeedMinMax.y;
+    cmsmin = moveSpeedMinMax.x;
+    cmsmax = moveSpeedMinMax.y;
+    csdmin = sensorDistanceMinMax.x;
+    csdmax = sensorDistanceMinMax.y;
+    csamin = sensorAngleMinMax.x;
+    csamax = sensorAngleMinMax.y;
+    cramin = rotationAngleMinMax.x;
+    cramax = rotationAngleMinMax.y;
+    cdamin = depositAmountMinMax.x;
+    cdamax = depositAmountMinMax.y;
+    currentSpawnType =  spawnType;
+    currentPopulationProperties = populationProperties;
+    currentPopulationColorMode = populationColorMode;
+    editorUpdateCall = true;
     populationAmount = totalPopulations;
+    agents = totalAgents;
     texture          = new float[simWidth][simHeight][populationAmount];
     populations      = new Population[populationAmount];
     populationColors = new float[populationAmount];
-
-    float moveSpeed      = random(moveSpeedMinMax.x,      moveSpeedMinMax.y     );
+    populationNames  = new String[populationAmount];
+    
+    float moveSpeed      = random(moveSpeedMinMax.x, moveSpeedMinMax.y     );
     float sensorDistance = random(sensorDistanceMinMax.x, sensorDistanceMinMax.y);
-    float sensorAngle    = random(sensorAngleMinMax.x,    sensorAngleMinMax.y   );
-    float rotationAngle  = random(rotationAngleMinMax.x,  rotationAngleMinMax.y );
-    float depositAmount  = random(depositAmountMinMax.x,  depositAmountMinMax.y );
+    float sensorAngle    = random(sensorAngleMinMax.x, sensorAngleMinMax.y   );
+    float rotationAngle  = random(rotationAngleMinMax.x, rotationAngleMinMax.y );
+    float depositAmount  = random(depositAmountMinMax.x, depositAmountMinMax.y );
 
     for (int i = 0; i < populations.length; i++)
     {
-      populationColors[i] = random(255);
+      switch(populationColorMode)
+      {
+      case RANDOM:
+        populationColors[i] = random(255);
+        break;
+
+      case INCREMENT:
+        populationColors[i] = 255/populationAmount*i;
+        break;
+      }
+
+      populationNames[i] = GeneratePopulationName();
+
       if (populationProperties == POPULATIONPROPERTIES.RANDOM)
       {
-         moveSpeed      = random(moveSpeedMinMax.x,      moveSpeedMinMax.y     );
-         sensorDistance = random(sensorDistanceMinMax.x, sensorDistanceMinMax.y);
-         sensorAngle    = random(sensorAngleMinMax.x,    sensorAngleMinMax.y   );
-         rotationAngle  = random(rotationAngleMinMax.x,  rotationAngleMinMax.y );
-         depositAmount  = random(depositAmountMinMax.x,  depositAmountMinMax.y );
+        moveSpeed      = random(moveSpeedMinMax.x, moveSpeedMinMax.y     );
+        sensorDistance = random(sensorDistanceMinMax.x, sensorDistanceMinMax.y);
+        sensorAngle    = random(sensorAngleMinMax.x, sensorAngleMinMax.y   );
+        rotationAngle  = random(rotationAngleMinMax.x, rotationAngleMinMax.y );
+        depositAmount  = random(depositAmountMinMax.x, depositAmountMinMax.y );
       }
-      populations[i] = new Population(totalAgents/populationAmount, this, moveSpeed, sensorDistance, sensorAngle, rotationAngle, depositAmount, i);
+      populations[i] = new Population(totalAgents/populationAmount, this, moveSpeed, sensorDistance, sensorAngle, rotationAngle, depositAmount, i,populationColors[i]);
     }
   }
 
@@ -152,5 +181,18 @@ class World
         }
       }
     }
+  }
+
+  String GeneratePopulationName()
+  {
+    String name = "";
+
+    int rand = round(random(2, 4));
+    for (int i = 0; i < rand; i++)
+    {
+      name += namePieces[floor(random(namePieces.length))];
+    }
+
+    return name;
   }
 }

@@ -1,0 +1,58 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": -200,
+    "totalAgents": 35155,
+    "propertySync": 1,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -50,
+    "decaySpeed": 0.5176122188568115,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 1,
+    "totalPopulations": 4,
+    "moveSpeedMax": 195.5555419921875,
+    "sensorAngleMax": 270,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": -90,
+    "sensorDistanceMax": 50
+  },
+  {
+    "depositAmount": 0.2781389653682709,
+    "sensorAngle": 76.9644775390625,
+    "moveSpeed": 112.82040405273438,
+    "color": 249.94593811035156,
+    "rotationAngle": 30.966629028320312,
+    "name": "nogama",
+    "sensorDistance": 11.395732879638672
+  },
+  {
+    "depositAmount": 0.2781389653682709,
+    "sensorAngle": 76.9644775390625,
+    "moveSpeed": 112.82040405273438,
+    "color": 167.97848510742188,
+    "rotationAngle": 30.966629028320312,
+    "name": "lirino",
+    "sensorDistance": 11.395732879638672
+  },
+  {
+    "depositAmount": 0.2781389653682709,
+    "sensorAngle": 76.9644775390625,
+    "moveSpeed": 112.82040405273438,
+    "color": 246.46395874023438,
+    "rotationAngle": 30.966629028320312,
+    "name": "gonli",
+    "sensorDistance": 11.395732879638672
+  },
+  {
+    "depositAmount": 0.2781389653682709,
+    "sensorAngle": 76.9644775390625,
+    "moveSpeed": 112.82040405273438,
+    "color": 133.53485107421875,
+    "rotationAngle": 30.966629028320312,
+    "name": "koomu",
+    "sensorDistance": 11.395732879638672
+  }
+]

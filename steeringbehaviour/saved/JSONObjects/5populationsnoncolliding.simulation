@@ -1,0 +1,67 @@
+[
+  {
+    "decaySpeedMax": 1,
+    "moveSpeedMin": 2.22222900390625,
+    "totalAgents": 50995,
+    "propertySync": 0,
+    "colorMode": 0,
+    "rotationAngleMax": 51,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -1.1111106872558594,
+    "decaySpeed": 0.8323137164115906,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 2,
+    "totalPopulations": 5,
+    "moveSpeedMax": 35.55555725097656,
+    "sensorAngleMax": 30,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": 22.00000762939453,
+    "sensorDistanceMax": 7.222221374511719
+  },
+  {
+    "depositAmount": 0.26566118001937866,
+    "sensorAngle": 14.00887393951416,
+    "moveSpeed": 12.79197883605957,
+    "color": 252,
+    "rotationAngle": 46.98119354248047,
+    "name": "koori",
+    "sensorDistance": 4.45645809173584
+  },
+  {
+    "depositAmount": 0.4478422701358795,
+    "sensorAngle": 23.69700050354004,
+    "moveSpeed": 8.11559772491455,
+    "color": 22.92496109008789,
+    "rotationAngle": 43.05211639404297,
+    "name": "tune",
+    "sensorDistance": 2.5114028453826904
+  },
+  {
+    "depositAmount": 0.5440000295639038,
+    "sensorAngle": 16.06488800048828,
+    "moveSpeed": 25.10481834411621,
+    "color": 183,
+    "rotationAngle": 45.63227462768555,
+    "name": "rimalo",
+    "sensorDistance": 3.8776445388793945
+  },
+  {
+    "depositAmount": 0.8172090649604797,
+    "sensorAngle": 26.020235061645508,
+    "moveSpeed": 25.96699333190918,
+    "color": 110,
+    "rotationAngle": 25.72907257080078,
+    "name": "teepe",
+    "sensorDistance": 6.69183349609375
+  },
+  {
+    "depositAmount": 0.6249111294746399,
+    "sensorAngle": 16.88165283203125,
+    "moveSpeed": 29.088912963867188,
+    "color": 6.904594421386719,
+    "rotationAngle": 30.846065521240234,
+    "name": "babako",
+    "sensorDistance": 5.944924831390381
+  }
+]

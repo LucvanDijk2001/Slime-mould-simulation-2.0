@@ -1,0 +1,40 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": 13.333343505859375,
+    "totalAgents": 26245,
+    "propertySync": 1,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -50,
+    "decaySpeed": 0.6837198734283447,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 0,
+    "totalPopulations": 2,
+    "moveSpeedMax": 200,
+    "sensorAngleMax": 270,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": -90,
+    "sensorDistanceMax": 50
+  },
+  {
+    "depositAmount": 0.4408836364746094,
+    "sensorAngle": 56.27226638793945,
+    "moveSpeed": 68.92259216308594,
+    "color": 177.8438262939453,
+    "rotationAngle": -0.93133544921875,
+    "name": "negape",
+    "sensorDistance": -23.053932189941406
+  },
+  {
+    "depositAmount": 0.4408836364746094,
+    "sensorAngle": 56.27226638793945,
+    "moveSpeed": 68.92259216308594,
+    "color": 72.65453338623047,
+    "rotationAngle": -0.93133544921875,
+    "name": "siden",
+    "sensorDistance": -23.053932189941406
+  }
+]

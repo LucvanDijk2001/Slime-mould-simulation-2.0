@@ -1,0 +1,31 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": -200,
+    "totalAgents": 3970,
+    "propertySync": 0,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -50,
+    "decaySpeed": 0.6109480857849121,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 0,
+    "totalPopulations": 1,
+    "moveSpeedMax": 200,
+    "sensorAngleMax": 270,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": -90,
+    "sensorDistanceMax": 50
+  },
+  {
+    "depositAmount": 0.4511706531047821,
+    "sensorAngle": 49.21310806274414,
+    "moveSpeed": -174.07534790039062,
+    "color": 77.0860824584961,
+    "rotationAngle": -9.484626770019531,
+    "name": "bovi",
+    "sensorDistance": -42.35240936279297
+  }
+]

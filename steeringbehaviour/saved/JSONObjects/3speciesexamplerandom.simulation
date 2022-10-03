@@ -1,0 +1,49 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": 5,
+    "totalAgents": 83170,
+    "propertySync": 0,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 5,
+    "depositAmountMax": 0.9000000357627869,
+    "sensorDistanceMin": -7.222221374511719,
+    "decaySpeed": 0.4201290011405945,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 1,
+    "totalPopulations": 3,
+    "moveSpeedMax": 73.33334350585938,
+    "sensorAngleMax": 135,
+    "depositAmountMin": 0.14000000059604645,
+    "rotationAngleMin": 5,
+    "sensorDistanceMax": 31.666664123535156
+  },
+  {
+    "depositAmount": 0.33331435918807983,
+    "sensorAngle": 6.3194708824157715,
+    "moveSpeed": 54.942291259765625,
+    "color": 180.00973510742188,
+    "rotationAngle": 23.09233856201172,
+    "name": "sigane",
+    "sensorDistance": 17.1986026763916
+  },
+  {
+    "depositAmount": 0.35902053117752075,
+    "sensorAngle": 104.92872619628906,
+    "moveSpeed": 8.396722793579102,
+    "color": 226.79742431640625,
+    "rotationAngle": 51.64785385131836,
+    "name": "vigadenpe",
+    "sensorDistance": 9.493370056152344
+  },
+  {
+    "depositAmount": 0.3156648278236389,
+    "sensorAngle": 131.97467041015625,
+    "moveSpeed": 43.693748474121094,
+    "color": 27.411561965942383,
+    "rotationAngle": 66.869384765625,
+    "name": "tuvimatu",
+    "sensorDistance": 1.3495397567749023
+  }
+]

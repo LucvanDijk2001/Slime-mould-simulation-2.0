@@ -1,0 +1,112 @@
+[
+  {
+    "decaySpeedMax": 1,
+    "moveSpeedMin": 5,
+    "totalAgents": 100000,
+    "propertySync": 1,
+    "colorMode": 1,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 5,
+    "depositAmountMax": 0.9000000357627869,
+    "sensorDistanceMin": 2.2222213745117188,
+    "decaySpeed": 0.4122181534767151,
+    "decaySpeedMin": 0,
+    "spawnType": 2,
+    "totalPopulations": 10,
+    "moveSpeedMax": 38.333343505859375,
+    "sensorAngleMax": 52.5,
+    "depositAmountMin": 0.5600000023841858,
+    "rotationAngleMin": 55,
+    "sensorDistanceMax": 13.88888931274414
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 0,
+    "rotationAngle": 61.29627227783203,
+    "name": "dotuliko",
+    "sensorDistance": 9.095556259155273
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 25,
+    "rotationAngle": 61.29627227783203,
+    "name": "koorili",
+    "sensorDistance": 9.095556259155273
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 50,
+    "rotationAngle": 61.29627227783203,
+    "name": "runo",
+    "sensorDistance": 9.095556259155273
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 75,
+    "rotationAngle": 61.29627227783203,
+    "name": "rubama",
+    "sensorDistance": 9.095556259155273
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 100,
+    "rotationAngle": 61.29627227783203,
+    "name": "loremu",
+    "sensorDistance": 9.095556259155273
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 125,
+    "rotationAngle": 61.29627227783203,
+    "name": "kookooma",
+    "sensorDistance": 9.095556259155273
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 150,
+    "rotationAngle": 61.29627227783203,
+    "name": "videbeega",
+    "sensorDistance": 9.095556259155273
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 175,
+    "rotationAngle": 61.29627227783203,
+    "name": "rikookoobee",
+    "sensorDistance": 9.095556259155273
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 200,
+    "rotationAngle": 61.29627227783203,
+    "name": "renopanden",
+    "sensorDistance": 9.095556259155273
+  },
+  {
+    "depositAmount": 0.6592966318130493,
+    "sensorAngle": 47.2724609375,
+    "moveSpeed": 26.03670883178711,
+    "color": 225,
+    "rotationAngle": 61.29627227783203,
+    "name": "bokooli",
+    "sensorDistance": 9.095556259155273
+  }
+]

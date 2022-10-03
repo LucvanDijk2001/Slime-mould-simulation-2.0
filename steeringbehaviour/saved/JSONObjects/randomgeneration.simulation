@@ -1,0 +1,49 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": -200,
+    "totalAgents": 35155,
+    "propertySync": 1,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -50,
+    "decaySpeed": 0.7269739508628845,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 2,
+    "totalPopulations": 3,
+    "moveSpeedMax": 195.5555419921875,
+    "sensorAngleMax": 270,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": -90,
+    "sensorDistanceMax": 50
+  },
+  {
+    "depositAmount": 0.7858447432518005,
+    "sensorAngle": 203.36264038085938,
+    "moveSpeed": 158.9090576171875,
+    "color": 68.03507232666016,
+    "rotationAngle": -64.69222259521484,
+    "name": "koodokoli",
+    "sensorDistance": -8.522693634033203
+  },
+  {
+    "depositAmount": 0.7858447432518005,
+    "sensorAngle": 203.36264038085938,
+    "moveSpeed": 158.9090576171875,
+    "color": 25.19339370727539,
+    "rotationAngle": -64.69222259521484,
+    "name": "loogonli",
+    "sensorDistance": -8.522693634033203
+  },
+  {
+    "depositAmount": 0.7858447432518005,
+    "sensorAngle": 203.36264038085938,
+    "moveSpeed": 158.9090576171875,
+    "color": 127.57405090332031,
+    "rotationAngle": -64.69222259521484,
+    "name": "lino",
+    "sensorDistance": -8.522693634033203
+  }
+]

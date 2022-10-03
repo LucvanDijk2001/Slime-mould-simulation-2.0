@@ -1,0 +1,49 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": 5,
+    "totalAgents": 83170,
+    "propertySync": 1,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 5,
+    "depositAmountMax": 0.9000000357627869,
+    "sensorDistanceMin": -7.222221374511719,
+    "decaySpeed": 0.6271325945854187,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 2,
+    "totalPopulations": 3,
+    "moveSpeedMax": 73.33334350585938,
+    "sensorAngleMax": 135,
+    "depositAmountMin": 0.14000000059604645,
+    "rotationAngleMin": 5,
+    "sensorDistanceMax": 31.666664123535156
+  },
+  {
+    "depositAmount": 0.37246614694595337,
+    "sensorAngle": 125.45208740234375,
+    "moveSpeed": 72.507568359375,
+    "color": 206,
+    "rotationAngle": 33.9851188659668,
+    "name": "gasiloo",
+    "sensorDistance": 14.831676483154297
+  },
+  {
+    "depositAmount": 0.37246614694595337,
+    "sensorAngle": 125.45208740234375,
+    "moveSpeed": 72.507568359375,
+    "color": 20.877098083496094,
+    "rotationAngle": 33.9851188659668,
+    "name": "lirunegon",
+    "sensorDistance": 14.831676483154297
+  },
+  {
+    "depositAmount": 0.37246614694595337,
+    "sensorAngle": 125.45208740234375,
+    "moveSpeed": 72.507568359375,
+    "color": 148.14576721191406,
+    "rotationAngle": 33.9851188659668,
+    "name": "rugon",
+    "sensorDistance": 14.831676483154297
+  }
+]

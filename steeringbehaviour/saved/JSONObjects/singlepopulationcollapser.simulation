@@ -1,0 +1,31 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": 5,
+    "totalAgents": 66340,
+    "propertySync": 0,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 5,
+    "depositAmountMax": 0.800000011920929,
+    "sensorDistanceMin": 1,
+    "decaySpeed": 0.5624454617500305,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 0,
+    "totalPopulations": 1,
+    "moveSpeedMax": 73.33334350585938,
+    "sensorAngleMax": 120,
+    "depositAmountMin": 0.20000000298023224,
+    "rotationAngleMin": 5,
+    "sensorDistanceMax": 30
+  },
+  {
+    "depositAmount": 0.3487822115421295,
+    "sensorAngle": 33.682003021240234,
+    "moveSpeed": 51.4666748046875,
+    "color": 169.02035522460938,
+    "rotationAngle": 44.10000228881836,
+    "name": "loliloo",
+    "sensorDistance": 14.229411125183105
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": -200,
+    "totalAgents": 100000,
+    "propertySync": 0,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -50,
+    "decaySpeed": 0.4985308337211609,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 0,
+    "totalPopulations": 1,
+    "moveSpeedMax": 200,
+    "sensorAngleMax": 270,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": -90,
+    "sensorDistanceMax": 50
+  },
+  {
+    "depositAmount": 0.11424832046031952,
+    "sensorAngle": 213.01324462890625,
+    "moveSpeed": 135.89068603515625,
+    "color": 73.71015930175781,
+    "rotationAngle": -15.658363342285156,
+    "name": "neliri",
+    "sensorDistance": -35.78883361816406
+  }
+]

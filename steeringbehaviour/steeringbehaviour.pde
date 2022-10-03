@@ -1,23 +1,24 @@
 //main program
 World world;
 Editor editor;
-int simWidth = 600, simHeight = 600;
+int simWidth = 500, simHeight = 500;
 
 void setup()
 {
   size(1400, 800);
   colorMode(HSB);
   background(0);
-  editor = new Editor();
   MakeWorld();
+  editor = new Editor();
 }
 
 void draw()
 {
-  world.Update();
-  world.Show();
+  background(0);
   editor.Update();
+  world.Update();
   editor.Show();
+  world.Show();
 }
 
 void MakeWorld()

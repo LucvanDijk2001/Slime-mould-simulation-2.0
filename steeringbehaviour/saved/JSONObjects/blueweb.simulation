@@ -1,0 +1,31 @@
+[
+  {
+    "decaySpeedMax": 1,
+    "moveSpeedMin": -200,
+    "totalAgents": 100000,
+    "propertySync": 0,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -50,
+    "decaySpeed": 0.8061259388923645,
+    "decaySpeedMin": 0,
+    "spawnType": 0,
+    "totalPopulations": 1,
+    "moveSpeedMax": 200,
+    "sensorAngleMax": 270,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": -90,
+    "sensorDistanceMax": 50
+  },
+  {
+    "depositAmount": 0.5354549884796143,
+    "sensorAngle": 253.7496795654297,
+    "moveSpeed": -44.353057861328125,
+    "color": 161.3136444091797,
+    "rotationAngle": -39.65207290649414,
+    "name": "bakoone",
+    "sensorDistance": 17.896690368652344
+  }
+]

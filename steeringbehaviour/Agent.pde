@@ -30,20 +30,20 @@ class Agent
   {
     switch(spawnType)
     {
-     case CIRCLEINWARDS:
-       position = PVector.add(new PVector(simWidth/2, simHeight/2), PVector.mult(rand, random((simWidth/2)-simWidth/15)));
-       direction = degrees(atan2(rand.x, rand.y)) - 180;
-     break;
-     
-     case CIRCLEOUTWARDS:
-       position = PVector.add(new PVector(simWidth/2, simHeight/2), PVector.mult(rand, random((simWidth/2)-simWidth/15)));
-       direction = degrees(atan2(rand.x, rand.y));
-     break;
-     
-     case RANDOMPOSITION:
-       position = new PVector(random(simWidth),random(simHeight));
-       direction = random(360);
-     break;
+    case CIRCLEINWARDS:
+      position = PVector.add(new PVector(simWidth/2, simHeight/2), PVector.mult(rand, random((simWidth/2)-simWidth/15)));
+      direction = degrees(atan2(rand.x, rand.y)) - 180;
+      break;
+
+    case CIRCLEOUTWARDS:
+      position = PVector.add(new PVector(simWidth/2, simHeight/2), PVector.mult(rand, random((simWidth/2)-simWidth/15)));
+      direction = degrees(atan2(rand.x, rand.y));
+      break;
+
+    case RANDOMPOSITION:
+      position = new PVector(random(simWidth), random(simHeight));
+      direction = random(360);
+      break;
     }
     moveSpeed = ms;
     sensorDistance = sd;
@@ -57,6 +57,27 @@ class Agent
       sensors[i] = new PVector();
     }
     UpdateSensorPositions();
+  }
+
+  void ResetPosition()
+  {
+    switch(spawnType)
+    {
+    case CIRCLEINWARDS:
+      position = PVector.add(new PVector(simWidth/2, simHeight/2), PVector.mult(rand, random((simWidth/2)-simWidth/15)));
+      direction = degrees(atan2(rand.x, rand.y)) - 180;
+      break;
+
+    case CIRCLEOUTWARDS:
+      position = PVector.add(new PVector(simWidth/2, simHeight/2), PVector.mult(rand, random((simWidth/2)-simWidth/15)));
+      direction = degrees(atan2(rand.x, rand.y));
+      break;
+
+    case RANDOMPOSITION:
+      position = new PVector(random(simWidth), random(simHeight));
+      direction = random(360);
+      break;
+    }
   }
 
   void Update()
@@ -103,7 +124,7 @@ class Agent
   {
     for (int i = 0; i < sensors.length; i++)
     {
-     sensorReadings[i] = 0; 
+      sensorReadings[i] = 0;
     }
     for (int i = 0; i < sensors.length; i++)
     {
@@ -114,8 +135,7 @@ class Agent
           if (j == index)
           {
             sensorReadings[i] += world.texture[round(sensors[i].x)][round(sensors[i].y)][j];
-          }
-          else
+          } else
           {
             sensorReadings[i] -= world.texture[round(sensors[i].x)][round(sensors[i].y)][j];
           }

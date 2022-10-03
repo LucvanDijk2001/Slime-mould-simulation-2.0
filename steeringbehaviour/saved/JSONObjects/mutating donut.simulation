@@ -1,0 +1,58 @@
+[
+  {
+    "decaySpeedMax": 0.8999999761581421,
+    "moveSpeedMin": -200,
+    "totalAgents": 35155,
+    "propertySync": 1,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -50,
+    "decaySpeed": 0.8844689726829529,
+    "decaySpeedMin": 0.10000000149011612,
+    "spawnType": 1,
+    "totalPopulations": 4,
+    "moveSpeedMax": 195.5555419921875,
+    "sensorAngleMax": 270,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": -90,
+    "sensorDistanceMax": 50
+  },
+  {
+    "depositAmount": 0.7177135348320007,
+    "sensorAngle": 51.95288848876953,
+    "moveSpeed": 189.60153198242188,
+    "color": 240.2349395751953,
+    "rotationAngle": -33.4019775390625,
+    "name": "lire",
+    "sensorDistance": 35.90228271484375
+  },
+  {
+    "depositAmount": 0.7177135348320007,
+    "sensorAngle": 51.95288848876953,
+    "moveSpeed": 189.60153198242188,
+    "color": 197.29806518554688,
+    "rotationAngle": -33.4019775390625,
+    "name": "dennoli",
+    "sensorDistance": 35.90228271484375
+  },
+  {
+    "depositAmount": 0.7177135348320007,
+    "sensorAngle": 51.95288848876953,
+    "moveSpeed": 189.60153198242188,
+    "color": 37.054988861083984,
+    "rotationAngle": -33.4019775390625,
+    "name": "likoolona",
+    "sensorDistance": 35.90228271484375
+  },
+  {
+    "depositAmount": 0.7177135348320007,
+    "sensorAngle": 51.95288848876953,
+    "moveSpeed": 189.60153198242188,
+    "color": 63.42226028442383,
+    "rotationAngle": -33.4019775390625,
+    "name": "lodali",
+    "sensorDistance": 35.90228271484375
+  }
+]

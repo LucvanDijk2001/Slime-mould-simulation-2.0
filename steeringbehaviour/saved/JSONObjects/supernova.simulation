@@ -1,0 +1,31 @@
+[
+  {
+    "decaySpeedMax": 1,
+    "moveSpeedMin": -200,
+    "totalAgents": 100000,
+    "propertySync": 0,
+    "colorMode": 0,
+    "rotationAngleMax": 90,
+    "sensorAngleMin": 0,
+    "depositAmountMax": 1,
+    "sensorDistanceMin": -50,
+    "decaySpeed": 0.9991474151611328,
+    "decaySpeedMin": 0,
+    "spawnType": 1,
+    "totalPopulations": 1,
+    "moveSpeedMax": 200,
+    "sensorAngleMax": 270,
+    "depositAmountMin": 0.10000000149011612,
+    "rotationAngleMin": -90,
+    "sensorDistanceMax": 50
+  },
+  {
+    "depositAmount": 0.15263743698596954,
+    "sensorAngle": 9.953484535217285,
+    "moveSpeed": 38.673309326171875,
+    "color": 58.77840805053711,
+    "rotationAngle": -5.233856201171875,
+    "name": "pegada",
+    "sensorDistance": 36.36070251464844
+  }
+]
